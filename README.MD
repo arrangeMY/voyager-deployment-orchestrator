@@ -1,5 +1,7 @@
 ### Introduction
 
+This package is a fork of the original Deployment Orchestrator made by [DrudgeRajen](https://github.com/DrudgeRajen/voyager-deployment-orchestrator). All credit to creating this packages goes to them, i have simply fixed a few issues that prevented the package operating on recent versions of Laravel.
+
 <a href = "https://github.com/the-control-group/voyager">Voyager </a> is an awesome admin tool for laravel. With the ability to create fully relational BREAD interfaces, to manage your data.
 
 Voyager has a limitation in the deployment, that would require you to perform all the BREAD setup that you have performed in your local development environment, on the production server.
