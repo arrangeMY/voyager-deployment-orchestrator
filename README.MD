@@ -24,7 +24,7 @@ Next, open the `config/voyager-deployment-orchestrator.php` and add the table na
 return [
     'tables' => [
         'users',
-        'posts
+        'posts'
     ],
 ];
 ```
