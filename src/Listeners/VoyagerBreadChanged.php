@@ -1,9 +1,9 @@
 <?php
 
-namespace DrudgeRajen\VoyagerDeploymentOrchestrator\Listeners;
+namespace arrangeMY\VoyagerDeploymentOrchestrator\Listeners;
 
 use TCG\Voyager\Events\BreadChanged;
-use DrudgeRajen\VoyagerDeploymentOrchestrator\VoyagerDeploymentOrchestrator;
+use arrangeMY\VoyagerDeploymentOrchestrator\VoyagerDeploymentOrchestrator;
 
 class VoyagerBreadChanged
 {

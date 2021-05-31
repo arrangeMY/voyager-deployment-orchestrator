@@ -1,10 +1,10 @@
 <?php
 
-namespace DrudgeRajen\VoyagerDeploymentOrchestrator\Commands;
+namespace arrangeMY\VoyagerDeploymentOrchestrator\Commands;
 
 use Exception;
 use Illuminate\Console\Command;
-use DrudgeRajen\VoyagerDeploymentOrchestrator\ContentManager\FileGenerator;
+use arrangeMY\VoyagerDeploymentOrchestrator\ContentManager\FileGenerator;
 
 class VDOSeed extends Command
 {

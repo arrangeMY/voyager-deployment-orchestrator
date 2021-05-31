@@ -1,10 +1,10 @@
 <?php
 
-namespace DrudgeRajen\VoyagerDeploymentOrchestrator\Providers;
+namespace arrangeMY\VoyagerDeploymentOrchestrator\Providers;
 
 use TCG\Voyager\Events\BreadChanged;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider;
-use DrudgeRajen\VoyagerDeploymentOrchestrator\Listeners\VoyagerBreadChanged;
+use arrangeMY\VoyagerDeploymentOrchestrator\Listeners\VoyagerBreadChanged;
 
 class OrchestratorEventServiceProvider extends EventServiceProvider
 {

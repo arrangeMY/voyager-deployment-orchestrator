@@ -1,9 +1,9 @@
 <?php
 
-namespace DrudgeRajen\VoyagerDeploymentOrchestrator\OrchestratorHandlers;
+namespace arrangeMY\VoyagerDeploymentOrchestrator\OrchestratorHandlers;
 
 use TCG\Voyager\Events\BreadChanged;
-use DrudgeRajen\VoyagerDeploymentOrchestrator\ContentManager\FileGenerator;
+use arrangeMY\VoyagerDeploymentOrchestrator\ContentManager\FileGenerator;
 
 class BreadUpdatedHandler
 {

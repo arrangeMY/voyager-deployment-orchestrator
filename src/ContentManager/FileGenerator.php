@@ -1,12 +1,12 @@
 <?php
 
-namespace DrudgeRajen\VoyagerDeploymentOrchestrator\ContentManager;
+namespace arrangeMY\VoyagerDeploymentOrchestrator\ContentManager;
 
 use Exception;
 use TCG\Voyager\Models\DataType;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\DatabaseManager;
-use DrudgeRajen\VoyagerDeploymentOrchestrator\ContentManager\FileSystem;
+use arrangeMY\VoyagerDeploymentOrchestrator\ContentManager\FileSystem;
 
 class FileGenerator
 {

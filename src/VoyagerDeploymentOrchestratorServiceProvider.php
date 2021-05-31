@@ -1,9 +1,9 @@
 <?php
 
-namespace DrudgeRajen\VoyagerDeploymentOrchestrator;
+namespace arrangeMY\VoyagerDeploymentOrchestrator;
 
 use Illuminate\Support\ServiceProvider;
-use DrudgeRajen\VoyagerDeploymentOrchestrator\Providers\OrchestratorEventServiceProvider;
+use arrangeMY\VoyagerDeploymentOrchestrator\Providers\OrchestratorEventServiceProvider;
 
 class VoyagerDeploymentOrchestratorServiceProvider extends ServiceProvider
 {
@@ -13,7 +13,7 @@ class VoyagerDeploymentOrchestratorServiceProvider extends ServiceProvider
 
         $publishable = [
             'seeds' => [
-                "{$publishablePath}/database/seeds/" => database_path('seeds/breads'),
+                "{$publishablePath}/database/seeders/" => database_path('seeders'),
             ],
             'config' => [
                 "{$publishablePath}/config/voyager-deployment-orchestrator.php" => config_path('voyager-deployment-orchestrator.php'),

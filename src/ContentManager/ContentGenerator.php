@@ -1,6 +1,6 @@
 <?php
 
-namespace DrudgeRajen\VoyagerDeploymentOrchestrator\ContentManager;
+namespace arrangeMY\VoyagerDeploymentOrchestrator\ContentManager;
 
 class ContentGenerator
 {

@@ -1,11 +1,11 @@
 <?php
 
-namespace DrudgeRajen\VoyagerDeploymentOrchestrator\OrchestratorHandlers;
+namespace arrangeMY\VoyagerDeploymentOrchestrator\OrchestratorHandlers;
 
 use TCG\Voyager\Facades\Voyager;
 use TCG\Voyager\Events\BreadChanged;
 use Illuminate\Support\Facades\Artisan;
-use DrudgeRajen\VoyagerDeploymentOrchestrator\ContentManager\FileGenerator;
+use arrangeMY\VoyagerDeploymentOrchestrator\ContentManager\FileGenerator;
 
 class BreadDeletedHandler
 {

@@ -1,5 +1,5 @@
 {
-  "name": "drudge-rajen/voyager-deployment-orchestrator",
+  "name": "arrangemy/voyager-deployment-orchestrator",
   "description": "Package for Voyager BREAD Deployment.",
   "keywords": [
     "laravel",
@@ -16,20 +16,19 @@
   },
   "autoload": {
     "psr-4": {
-      "DrudgeRajen\\VoyagerDeploymentOrchestrator\\": "src/"
+      "arrangeMY\\VoyagerDeploymentOrchestrator\\": "src/"
     }
   },
   "authors": [
     {
-      "name": "Rajendra Sharma",
-      "email": "drudge.rajan@gmail.com"
+      "name": "Alex Ganderton"
     }
   ],
   "minimum-stability": "stable",
   "extra": {
     "laravel": {
       "providers": [
-        "DrudgeRajen\\VoyagerDeploymentOrchestrator\\VoyagerDeploymentOrchestratorServiceProvider"
+        "arrangeMY\\VoyagerDeploymentOrchestrator\\VoyagerDeploymentOrchestratorServiceProvider"
       ]
     }
   },

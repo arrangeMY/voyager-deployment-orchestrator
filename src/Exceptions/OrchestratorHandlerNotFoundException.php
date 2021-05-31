@@ -1,6 +1,6 @@
 <?php
 
-namespace DrudgeRajen\VoyagerDeploymentOrchestrator\Exceptions;
+namespace arrangeMY\VoyagerDeploymentOrchestrator\Exceptions;
 
 use Exception;
 use Throwable;

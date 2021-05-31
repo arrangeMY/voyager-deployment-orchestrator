@@ -1,6 +1,6 @@
 <?php
 
-namespace DrudgeRajen\VoyagerDeploymentOrchestrator\ContentManager;
+namespace arrangeMY\VoyagerDeploymentOrchestrator\ContentManager;
 
 use Illuminate\Support\Composer;
 use Illuminate\Filesystem\Filesystem as LaravelFileSystem;
@@ -44,7 +44,7 @@ class FileSystem
      */
     public function getSeedFolderPath() : string
     {
-        return base_path() . '/database/seeds/breads';
+        return base_path() . '/database/seeders';
     }
 
     /**

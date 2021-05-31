@@ -1,31 +1,28 @@
-[![StyleCI](https://github.styleci.io/repos/159037396/shield?branch=master)](https://github.styleci.io/repos/159037396)
-
 ### Introduction
 
-<a href = "https://github.com/the-control-group/voyager">Voyager </a> is an awesome admin tool for laravel.
-It is very easy to create admin tool for CMS using Voyager's awesome feature [BREAD](https://voyager.readme.io/docs/bread).
+<a href = "https://github.com/the-control-group/voyager">Voyager </a> is an awesome admin tool for laravel. With the ability to create fully relational BREAD interfaces, to manage your data.
 
-Voyager has limitation for the deployment (after you finish the work, create bread and need to publish in production. :) )
+Voyager has a limitation in the deployment, that would require you to perform all the BREAD setup that you have performed in your local development environment, on the production server.
 
-Voyager Deployment Orchestrator is the package which will listen `BREAD  Events` (Add, Update Delete) and will generate
-files, so that BREAD data can be easily seeded.
+Voyager Deployment Orchestrator is the package which will listen `BREAD  Events` (Add, Update Delete) and will generate files, so that and BREAD changes made on a local development server can be easily seeded to production.
 
 ### Installation
 
-```composer require drudge-rajen/voyager-deployment-orchestrator```
+```composer require arrangeMY/voyager-deployment-orchestrator:dev-master```
 
 Then publish the default config and seeder file.
 
 ```
-php artisan vendor:publish --provider="DrudgeRajen\VoyagerDeploymentOrchestrator\VoyagerDeploymentOrchestratorServiceProvider"
+php artisan vendor:publish --provider="arrangeMY\VoyagerDeploymentOrchestrator\VoyagerDeploymentOrchestratorServiceProvider"
 ```
 
-Next, open the `config/voyager-deployment-orchestrator.php` and add the tables name of which BREAD seeders will be generated.
+Next, open the `config/voyager-deployment-orchestrator.php` and add the table names which you require BREAD seeders to be generated for.
 
 ```
 return [
     'tables' => [
-        users
+        'users',
+        'posts
     ],
 ];
 ```
@@ -53,7 +50,7 @@ It also supports the generation for multiple tables.
 
 ``` php artisan vdo:generate table-name1,table-name2,table-name3```
 
-VDO seed generator command will keep the generated seed files inside `/database/seeds/breads` with prefix `TableSeeder`
+VDO seed generator command will keep the generated seed files inside `/database/seeders` with prefix `TableSeeder`
 
 ***Note:*** VDO seed generator will not add the seeder file in `VoyagerDeploymentOrchestratorSeeder.php` class automatically, because
 this class in only used for BREAD seeders not the tables seeder. If you want to run all the vdo generated seeder at once,
@@ -68,6 +65,3 @@ Run phpcs linter to check for any error that may happen during PR.
 Fix errors reported by CI during Pull request.
 
 ```composer fix```
-
-### Future Tasks
-- [ ] Writing Tests
