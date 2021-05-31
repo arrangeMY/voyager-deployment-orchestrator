@@ -10,7 +10,7 @@ Voyager Deployment Orchestrator is the package which will listen `BREAD  Events`
 
 ### Installation
 
-```composer require arrangeMY/voyager-deployment-orchestrator:dev-master```
+```composer require arrangeMY/voyager-deployment-orchestrator```
 
 Then publish the default config and seeder file.
 
